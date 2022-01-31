@@ -1,0 +1,11 @@
+site_name: My Docs
+theme:
+  name: material
+plugins:
+- search
+- mkdocstrings:
+    handlers:
+      python:
+        setup_commands:
+          - import sys
+          - sys.path.append("src")

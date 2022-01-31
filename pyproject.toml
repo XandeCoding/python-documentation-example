@@ -12,6 +12,10 @@ peewee = "^3.14.8"
 pydantic = "^1.9.0"
 
 [tool.poetry.dev-dependencies]
+scanapi = "^2.6.0"
+mkdocs = "^1.2.3"
+mkdocs-material = "^8.1.9"
+mkdocstrings = "^0.17.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -1,0 +1,12 @@
+endpoints:
+  - name: python-documentaion-scanapi
+    path: http://localhost:8000
+    requests:
+      - name: list_all_clients
+        path: client/
+        method: get
+        tests:
+          - name: status_code_is_200
+            assert: ${{ response.status_code == 200 }}
+          - name: response_time_is_under_half_second
+            assert: ${{ response.elapsed.total_seconds() < 0.5 }}
